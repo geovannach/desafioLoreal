@@ -33,7 +33,7 @@ header{
   .banner {
     width: 100vw;
     @media (max-width: 800px) {
-      display: none;
+      display: none; //retirando a imagem
       }
      }
 
@@ -41,9 +41,22 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-top: 30px;
+        @media (max-width: 800px) {
+           flex-direction: column;
+        }
       }
 
       .caixa1{
         width: 30vw;
-      }
-  }
+        line-height: 25px;
+        text-align: center;
+       @media (max-widht:800px) {
+       width: 55vw;
+       text-align: center;
+       margin-top: 30px;
+     }
+   } 
+}
+  
+ 
